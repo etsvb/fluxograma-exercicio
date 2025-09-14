@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fluxotriangulos"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-09 07:30:01 "/>
+        <attribute name="created" value="QWx1bm87TTU3MjgxOzIwMjUtMDktMDk7IjA2OjU2OjM5ICI7MjA2Mg=="/>
+        <attribute name="edited" value="QWx1bm87TTU3MjgxOzIwMjUtMDktMDk7IjA2OjU5OjI0ICI7MjtBbHVubztNNTcyODE7MjAyNS0wOS0wOTsiMDY6NTI6MjggIjtGbHV4b2dyYW0zLmZwcmc7NTgxOQ=="/>
+        <attribute name="edited" value="QWx1bm87TTU3MjgxOzIwMjUtMDktMDk7IjA3OjE3OjE3ICI7MTsyMTY0"/>
+        <attribute name="edited" value="QWx1bm87TTU3MTQ0OzIwMjUtMDktMDk7IjA3OjMwOjAxICI7MTsyMTUw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, num3, triangulo" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro lado: &quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Digite o segundo lado: &quot;" newline="True"/>
+            <input variable="num2"/>
+            <output expression="&quot;Digite a base: &quot;" newline="True"/>
+            <input variable="num3"/>
+            <if expression="num1 = num2">
+                <then>
+                    <if expression="num1 = num3">
+                        <then>
+                            <output expression="&quot;O triangulo &#233; equilatero&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;o triangulo &#233; isosceles&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="num1 = num3">
+                        <then>
+                            <output expression="&quot;o triangulo &#233; isosceles&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;o triangulo &#233; escaleno&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

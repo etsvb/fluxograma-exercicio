@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fluxoescolafinal"/>
+        <attribute name="authors" value="erich"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-11 01:22:21 "/>
+        <attribute name="created" value="ZXJpY2g7V0lOLUhMQkpINjRUNTJJOzIwMjUtMDktMTE7IjAxOjIyOjAxICI7MjcxMw=="/>
+        <attribute name="edited" value="ZXJpY2g7V0lOLUhMQkpINjRUNTJJOzIwMjUtMDktMTE7IjAxOjIyOjA0ICI7MTtBbHVubztNNTcyODE7MjAyNS0wOS0wOTsiMDg6MzM6MzkgIjtmbHV4b2VzY29sYS5mcHJnOzY2Njc="/>
+        <attribute name="edited" value="ZXJpY2g7V0lOLUhMQkpINjRUNTJJOzIwMjUtMDktMTE7IjAxOjIyOjIxICI7MTsyODIz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, aN4, fN5, notaParcial, frequencia, notaFinal, presenca, mediaFinal" type="Integer" array="False" size=""/>
+            <declare name="totalAulas" type="Integer" array="False" size=""/>
+            <assign variable="totalAulas" expression="40"/>
+            <output expression="&quot;Digite a primeira nota: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Digite a segunda nota: &quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;Digite a terceira nota: &quot;" newline="True"/>
+            <input variable="n3"/>
+            <assign variable="notaParcial" expression="(n1+n2+n3)/3"/>
+            <output expression="&quot;Digite o total de faltas: &quot;" newline="True"/>
+            <input variable="fN5"/>
+            <assign variable="presenca" expression="totalAulas - fN5"/>
+            <assign variable="frequencia" expression="(presenca/totalAulas)*100"/>
+            <if expression="frequencia &gt;= 75">
+                <then>
+                    <if expression="notaParcial &gt;= 7">
+                        <then>
+                            <output expression="&quot;Parab&#233;ns voc&#234;s foi aprovado, sua m&#233;dia foi: &quot; &amp; notaParcial" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Voce foi para prova final, digite a nota que voce tirou na prova final: &quot; &amp; notaParcial" newline="True"/>
+                            <input variable="notafinal"/>
+                            <assign variable="mediaFinal" expression="(notaParcial+notaFinal)/2"/>
+                            <if expression="mediaFinal &gt; 5">
+                                <then>
+                                    <output expression="&quot;Parab&#233;ns voc&#234;s foi aprovado, sua nota final foi: &quot; &amp; mediaFinal" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Infelizmente voc&#234; foi reprovado, sua nota n&#227;o atingiu a m&#233;dia: &quot; &amp;mediaFinal" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Voc&#234; foi reprovado por frequ&#234;ncia, sua frequ&#234;ncia foi: &quot; &amp; frequencia" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

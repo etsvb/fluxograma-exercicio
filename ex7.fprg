@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ex7"/>
+        <attribute name="authors" value="aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-11 06:24:06 "/>
+        <attribute name="created" value="YWx1bm87OTBRVDBOMzsyMDI1LTA5LTExOyIwNTowNzowMiAiOzIxNzk="/>
+        <attribute name="edited" value="YWx1bm87OTBRVDBOMzsyMDI1LTA5LTExOyIwNjoyNDowNiAiOzE7MjI5MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cachorro, tb, seca, trata, canil, buscar, banho" type="String" array="False" size=""/>
+            <output expression="&quot;Bem vindo ao Petshop kenricha, como se chama o nome do seu cachorrinho?&quot;" newline="True"/>
+            <input variable="cachorro"/>
+            <output expression="&quot;Certo, temos as op&#231;&#245;es (tosa e banho) e (apenas banho)&quot;" newline="True"/>
+            <output expression="&quot;O senhor(a) vai querer tosa/banho ou apenas banho?&quot;" newline="True"/>
+            <output expression="&quot;Digite (Tosa) para tosa/banho ou (Banho) para apenas banho&quot;" newline="True"/>
+            <input variable="tb"/>
+            <if expression="tb= &quot;Tosa&quot;">
+                <then>
+                    <output expression="&quot;Ok, iremos come&#231;ar a tosa e em seguida o banho de &quot;&amp;Cachorro" newline="True"/>
+                    <output expression="&quot;Tosando...&quot;" newline="True"/>
+                    <output expression="&quot;Digite (Banho) para finalizar a tosa e irmos para o banho&quot;" newline="True"/>
+                    <input variable="banho"/>
+                    <output expression="&quot;Tosado!! Vamos iniciar o banho. Aguarde um momento.&quot;" newline="False"/>
+                    <output expression="&quot;Dando banho...&quot;" newline="True"/>
+                    <output expression="&quot;. Digite (Secar) para finalizar o banho e ir para a secagem&quot;" newline="True"/>
+                    <input variable="seca"/>
+                    <output expression="&quot;Secando...&quot;" newline="True"/>
+                    <output expression="&quot;Secadinho!!! Agora iremos fazer uns tratamentos e posteriormente iremos leva-lo ao Canil.&quot;" newline="True"/>
+                    <output expression="&quot;Digite (Tratamento) para iniciarmos.&quot;" newline="True"/>
+                    <input variable="trata"/>
+                    <output expression="&quot;Botando antipulgas...&quot;" newline="True"/>
+                    <output expression="&quot;Botando coleira e adere&#231;os...&quot;" newline="True"/>
+                    <output expression="&quot;Ok, finalizamos o tratamento e iremos leva-lo ao Canil e amanha ele estar&#225; limpo e cheiroso a sua espera.&quot;" newline="True"/>
+                    <output expression="&quot;Digite (Canil) e volte amanha para busca-lo&quot;" newline="True"/>
+                    <input variable="canil"/>
+                    <output expression="&quot;Tchauzinho! Assim que chegar amanha, digite (Buscar) para pegar o seu Doguinho.&quot;" newline="True"/>
+                    <input variable="buscar"/>
+                    <output expression="&quot;Bom dia!! Aqui est&#225; o &quot;&amp;Cachorro" newline="False"/>
+                    <output expression="&quot; limpo e cheiroso!! Muito obrigado volte outro dia!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="tb= &quot;Banho&quot;">
+                        <then>
+                            <output expression="&quot;Ok, iremos levar o &quot; &amp;Cachorro" newline="False"/>
+                            <output expression="&quot; para nosso banho especial. Aguarde um momento!&quot;" newline="True"/>
+                            <output expression="&quot;Acompanhe conosco o processo de &quot;&amp;Cachorro" newline="False"/>
+                            <output expression="&quot;. Digite (Secar) para finalizar o banho e ir para a secagem&quot;" newline="True"/>
+                            <input variable="seca"/>
+                            <output expression="&quot;Secando...&quot;" newline="True"/>
+                            <output expression="&quot;Secadinho!!! Agora iremos fazer uns tratamentos e posteriormente iremos leva-lo ao Canil.&quot;" newline="True"/>
+                            <output expression="&quot;Digite (Tratamento) para iniciarmos.&quot;" newline="True"/>
+                            <input variable="trata"/>
+                            <output expression="&quot;Botando antipulgas...&quot;" newline="True"/>
+                            <output expression="&quot;Botando coleira e adere&#231;os...&quot;" newline="True"/>
+                            <output expression="&quot;Ok, finalizamos o tratamento e iremos leva-lo ao Canil e amanha ele estar&#225; limpo e cheiroso a sua espera.&quot;" newline="True"/>
+                            <output expression="&quot;Digite (Canil) e volte amanha para busca-lo&quot;" newline="True"/>
+                            <input variable="canil"/>
+                            <output expression="&quot;Tchauzinho! Assim que chegar amanha, digite (Buscar) para pegar o seu Doguinho.&quot;" newline="True"/>
+                            <input variable="buscar"/>
+                            <output expression="&quot;Bom dia!! Aki est&#225; o &quot;&amp;Cachorro" newline="False"/>
+                            <output expression="&quot; limpo e cheiroso!! Muito obrigado volte outro dia!&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

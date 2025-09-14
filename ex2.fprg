@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Fluxogram3"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-09 06:52:55 "/>
+        <attribute name="created" value="QWx1bm87TTU3MjgxOzIwMjUtMDktMDk7IjA2OjUyOjI4ICI7MjA1Ng=="/>
+        <attribute name="edited" value="QWx1bm87TTU3MjgxOzIwMjUtMDktMDk7IjA2OjUyOjMzICI7MTtBbHVubztNNTcwNTQ7MjAyNS0wOC0yOTsiMDY6Mjk6MzcgIjthdDAyY29uZGlnLmZwcmc7NTc1Mw=="/>
+        <attribute name="edited" value="QWx1bm87TTU3MjgxOzIwMjUtMDktMDk7IjA2OjUyOjU1ICI7MTsyMTY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite a nota da prova: &quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Dite a nota d o teste: &quot;" newline="True"/>
+            <input variable="num2"/>
+            <assign variable="media" expression="(num1 + num2)/2"/>
+            <output expression="&quot; A m&#233;dia &#233;: &quot; &amp; media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
