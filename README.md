@@ -1,24 +1,24 @@
 # fluxograma-exercicio
 
-Fluxo 1 
+`Fluxo 1`
 
 Faça um algoritmo que receba a nota de um aluno e a imprima;
 
 ---
 
-Fluxo 2
+`Fluxo 2`
 
 Faça um algoritmo que permita a entrada de duas notas, calcule a média aritmétrica e a exiba;
 
 ---
 
-Fluxo 3
+`Fluxo 3`
 
 Faça um fluxograma que permita a entrada de um número, e informe se o mesmo é impar ou par;
 
 ---
 
-Fluxo 4
+`Fluxo 4`
 
 Faça um fluxograma que leia três valores que representam
 os três lados de um triângulo e verifique se é um
@@ -26,14 +26,14 @@ triângulo equilátero, isósceles ou escaleno;
 
 ---
 
-Fluxo 5
+`Fluxo 5`
 
 Faça um fluxograma que leia um número e diga se ele é par
 ou ímpar, positivo, negativo ou igual a zero;
 
 ---
 
-Fluxo 6
+`Fluxo 6`
 
  Faça um fluxograma que leia 3 notas de um aluno e
 sua frequência. Calcule a média das notas e verifique se o
@@ -47,7 +47,7 @@ aprovado;
 
 ---
 
-Fluxo 7
+`Fluxo 7`
 1. Cachorro dá entrada no pet shop;
 2. Recepcionista do pet shop verifica quais serviços a serem executados;
 Se tosa e banho, segue o processo 3 em diante, caso apenas banho,
